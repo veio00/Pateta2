@@ -55,7 +55,7 @@ public class InfoMaquina {
         m.setAdiquirida("23/12/1992");
         //m.setResponsavel("");
         m.setSistema(sys.getVendor());
-        return m;
+        return m; 
         
     }
 }
