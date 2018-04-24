@@ -31,7 +31,7 @@ public class Pateta {
         u = LeituraMaquina.ColetaUso();
         boolean verificador = false;
         while(verificador == false){
-            verificador = Envio.envioColeta(g.toJson(u),"http://localhost:3182/api/Coleta/RecebeLeitura", Boolean.class);
+            verificador = Envio.envioColeta(g.toJson(u),"http://donald2.azurewebsites.net/api/Coleta/LeituraAgora", Boolean.class);
             Alerta.KeepAlive("true",Boolean.class);
             System.out.println("foi");
         }

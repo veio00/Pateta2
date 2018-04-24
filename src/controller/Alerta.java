@@ -35,7 +35,7 @@ public class Alerta {
         }
     }
     public static <T> T  KeepAlive(String ok,Class<T> clazz ) throws Exception {
-        URL obj = new URL("http://localhost:3182/api/Coleta/KeepAlive");
+        URL obj = new URL("http://donald2.azurewebsites.net/api/Coleta/KeepAlive");
         HttpURLConnection con = (HttpURLConnection) obj.openConnection();
         con.setDoInput(true);
         con.setDoOutput(true);
